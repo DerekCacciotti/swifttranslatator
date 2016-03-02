@@ -79,18 +79,25 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-         self.navigationController?.navigationItem.title = "Settings"
         
         
-        self.navigationController?.navigationBar.barTintColor = UIColor.flatMintColorDark()
-        self.navigationController?.navigationBar.tintColor = UIColor.flatWhiteColor()
+        
+        
         
         langpicker.hidden = true
        
         
         self.navigationItem.setRightBarButtonItem(SaveButton, animated: true)
         // default
-       outputlang = Language.Spanish
+       outputlang = Language.English
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        self.navigationController?.navigationBar.barTintColor = UIColor.flatSkyBlueColorDark()
+        self.navigationController?.navigationBar.tintColor = UIColor.flatWhiteColor()
+        self.navigationController?.navigationItem.title = "Settings"
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -100,6 +107,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     
     @IBAction func Savetapped(sender: AnyObject) {
              // save
+        print("saved")
         
         let defaults = NSUserDefaults.standardUserDefaults()
         //defaults.setObject(inputlang.rawValue, forKey: "input")

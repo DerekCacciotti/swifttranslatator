@@ -8,7 +8,6 @@
 
 import UIKit
 import Polyglot
-import ChameleonFramework
 
 
 class ViewController: UIViewController, UITextFieldDelegate {
@@ -21,27 +20,72 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var resultLabel: UILabel!
     
     let translator = Polyglot(clientId: "translatorswift", clientSecret: "KqbAaNwUAL+B6CxpqKKtRhy2dYLvckUhXCzlc748D7M=")
+    var defaults = NSUserDefaults.standardUserDefaults()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        resultLabel.hidden = true
-        let defaults = NSUserDefaults.standardUserDefaults()
-       var outp = defaults.objectForKey("output") as! String
-        defaults.synchronize()
         
-        translator.toLanguage = Language(rawValue: outp)!
-        print(outp)
-        translationtextField.delegate = self
+        
+        resultLabel.hidden = true
+        
+        
+        
+       /* var outputlng = defaults.objectForKey("output") as! String
+        
+        if outputlng.characters.count == 0
+        {
+            translator.toLanguage = Language.English
+        }
+        else if outputlng.characters.count < 1
+        {
+            print("called")
+            defaults.synchronize()
+            print(outputlng)
+            translator.toLanguage = Language(rawValue: outputlng)!
+            
+        }
+        
+*/
+       
+        
+
+        
+        
+       
      
+        
+        
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        defaults.synchronize()
         
         // design stuff
         
+        
         self.navigationController?.navigationBar.barTintColor = UIColor.flatMintColorDark()
         self.navigationController?.navigationBar.tintColor = UIColor.flatWhiteColor()
+        print("called")
         
-       
         
+        var outputlng = defaults.objectForKey("output") as! String
+        
+        if outputlng.characters.count == 0
+        {
+            translator.toLanguage = Language.English
+        }
+        else 
+        {
+            print("called")
+            defaults.synchronize()
+            print(outputlng)
+            translator.toLanguage = Language(rawValue: outputlng)!
+            
+        }
+
     }
     
     @IBAction func Translatetapped(sender: AnyObject) {
@@ -56,7 +100,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     {
         translator.translate(str) { (translation) -> (Void) in
             self.resultLabel.text = "\(str) means \(translation)"
-        }
+                    }
     }
     
     
@@ -75,6 +119,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func clearTapped(sender: AnyObject) {
         translationtextField.text = ""
         resultLabel.text = ""
+    }
+    // not used yet
+    private func updateDefaults() -> String
+    {
+        return NSUserDefaults.standardUserDefaults().objectForKey("output") as! String
     }
 
 }

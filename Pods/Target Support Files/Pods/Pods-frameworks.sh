@@ -84,10 +84,8 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods/ChameleonFramework.framework"
   install_framework "Pods/Polyglot.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods/ChameleonFramework.framework"
   install_framework "Pods/Polyglot.framework"
 fi

@@ -5,3 +5,5 @@
 #import "iSpeechSDK.h"
 #import "ISSpeechSynthesis.h"
 #import "ISSpeechRecognition.h"
+#import "Chameleon.h"
+

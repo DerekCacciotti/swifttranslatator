@@ -25,10 +25,19 @@
 		E280F42E1C632046004DC1F7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E280F42D1C632046004DC1F7 /* Security.framework */; };
 		E280F4301C632056004DC1F7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E280F42F1C632056004DC1F7 /* CFNetwork.framework */; };
 		E280F4331C6320DA004DC1F7 /* file.m in Sources */ = {isa = PBXBuildFile; fileRef = E280F4321C6320DA004DC1F7 /* file.m */; };
-		E2CAAA2E1C6456B4001C9E06 /* SSRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CAAA2C1C6456B4001C9E06 /* SSRadioButton.swift */; };
-		E2CAAA2F1C6456B4001C9E06 /* SSRadioButtonsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CAAA2D1C6456B4001C9E06 /* SSRadioButtonsController.swift */; };
+		E2A083821C869213000998A9 /* Chameleon_.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A083681C869213000998A9 /* Chameleon_.m */; };
+		E2A083831C869213000998A9 /* ChameleonConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A0836B1C869213000998A9 /* ChameleonConstants.m */; };
+		E2A083841C869213000998A9 /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A0836F1C869213000998A9 /* NSArray+Chameleon.m */; };
+		E2A083851C869213000998A9 /* UIAppearance+Swift.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A083711C869213000998A9 /* UIAppearance+Swift.m */; };
+		E2A083861C869213000998A9 /* UIButton+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A083731C869213000998A9 /* UIButton+Chameleon.m */; };
+		E2A083871C869213000998A9 /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A083751C869213000998A9 /* UIColor+Chameleon.m */; };
+		E2A083881C869213000998A9 /* UIColor+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A083771C869213000998A9 /* UIColor+ChameleonPrivate.m */; };
+		E2A083891C869213000998A9 /* UIImage+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A083791C869213000998A9 /* UIImage+ChameleonPrivate.m */; };
+		E2A0838A1C869213000998A9 /* UILabel+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A0837B1C869213000998A9 /* UILabel+Chameleon.m */; };
+		E2A0838B1C869213000998A9 /* UINavigationController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A0837D1C869213000998A9 /* UINavigationController+Chameleon.m */; };
+		E2A0838C1C869213000998A9 /* UIView+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A0837F1C869213000998A9 /* UIView+ChameleonPrivate.m */; };
+		E2A0838D1C869213000998A9 /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A083811C869213000998A9 /* UIViewController+Chameleon.m */; };
 		E2CAAA371C646122001C9E06 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CAAA361C646122001C9E06 /* SettingsViewController.swift */; };
-		E2CAAA391C6471AE001C9E06 /* ChameleonFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CAAA381C6471AE001C9E06 /* ChameleonFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,10 +91,34 @@
 		E280F42F1C632056004DC1F7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		E280F4311C6320D9004DC1F7 /* swifttranslatator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swifttranslatator-Bridging-Header.h"; sourceTree = "<group>"; };
 		E280F4321C6320DA004DC1F7 /* file.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = file.m; sourceTree = "<group>"; };
-		E2CAAA2C1C6456B4001C9E06 /* SSRadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSRadioButton.swift; sourceTree = "<group>"; };
-		E2CAAA2D1C6456B4001C9E06 /* SSRadioButtonsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSRadioButtonsController.swift; sourceTree = "<group>"; };
+		E2A083671C869213000998A9 /* Chameleon_.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chameleon_.h; sourceTree = "<group>"; };
+		E2A083681C869213000998A9 /* Chameleon_.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chameleon_.m; sourceTree = "<group>"; };
+		E2A083691C869213000998A9 /* Chameleon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chameleon.h; sourceTree = "<group>"; };
+		E2A0836A1C869213000998A9 /* ChameleonConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChameleonConstants.h; sourceTree = "<group>"; };
+		E2A0836B1C869213000998A9 /* ChameleonConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChameleonConstants.m; sourceTree = "<group>"; };
+		E2A0836C1C869213000998A9 /* ChameleonEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChameleonEnums.h; sourceTree = "<group>"; };
+		E2A0836D1C869213000998A9 /* ChameleonMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChameleonMacros.h; sourceTree = "<group>"; };
+		E2A0836E1C869213000998A9 /* NSArray+Chameleon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Chameleon.h"; sourceTree = "<group>"; };
+		E2A0836F1C869213000998A9 /* NSArray+Chameleon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Chameleon.m"; sourceTree = "<group>"; };
+		E2A083701C869213000998A9 /* UIAppearance+Swift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAppearance+Swift.h"; sourceTree = "<group>"; };
+		E2A083711C869213000998A9 /* UIAppearance+Swift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAppearance+Swift.m"; sourceTree = "<group>"; };
+		E2A083721C869213000998A9 /* UIButton+Chameleon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Chameleon.h"; sourceTree = "<group>"; };
+		E2A083731C869213000998A9 /* UIButton+Chameleon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Chameleon.m"; sourceTree = "<group>"; };
+		E2A083741C869213000998A9 /* UIColor+Chameleon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Chameleon.h"; sourceTree = "<group>"; };
+		E2A083751C869213000998A9 /* UIColor+Chameleon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Chameleon.m"; sourceTree = "<group>"; };
+		E2A083761C869213000998A9 /* UIColor+ChameleonPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		E2A083771C869213000998A9 /* UIColor+ChameleonPrivate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		E2A083781C869213000998A9 /* UIImage+ChameleonPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		E2A083791C869213000998A9 /* UIImage+ChameleonPrivate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		E2A0837A1C869213000998A9 /* UILabel+Chameleon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Chameleon.h"; sourceTree = "<group>"; };
+		E2A0837B1C869213000998A9 /* UILabel+Chameleon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Chameleon.m"; sourceTree = "<group>"; };
+		E2A0837C1C869213000998A9 /* UINavigationController+Chameleon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Chameleon.h"; sourceTree = "<group>"; };
+		E2A0837D1C869213000998A9 /* UINavigationController+Chameleon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Chameleon.m"; sourceTree = "<group>"; };
+		E2A0837E1C869213000998A9 /* UIView+ChameleonPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		E2A0837F1C869213000998A9 /* UIView+ChameleonPrivate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		E2A083801C869213000998A9 /* UIViewController+Chameleon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Chameleon.h"; sourceTree = "<group>"; };
+		E2A083811C869213000998A9 /* UIViewController+Chameleon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Chameleon.m"; sourceTree = "<group>"; };
 		E2CAAA361C646122001C9E06 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		E2CAAA381C6471AE001C9E06 /* ChameleonFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ChameleonFramework.framework; path = "Pods/../build/Debug-iphoneos/ChameleonFramework.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +126,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2CAAA391C6471AE001C9E06 /* ChameleonFramework.framework in Frameworks */,
 				E280F4301C632056004DC1F7 /* CFNetwork.framework in Frameworks */,
 				E280F42E1C632046004DC1F7 /* Security.framework in Frameworks */,
 				E280F42C1C63203D004DC1F7 /* SystemConfiguration.framework in Frameworks */,
@@ -133,7 +165,7 @@
 		DF62D82E574B0CBAF078456B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E2CAAA381C6471AE001C9E06 /* ChameleonFramework.framework */,
+				E2A0838E1C869240000998A9 /* Color Framework */,
 				E280F42F1C632056004DC1F7 /* CFNetwork.framework */,
 				E280F42D1C632046004DC1F7 /* Security.framework */,
 				E280F42B1C63203D004DC1F7 /* SystemConfiguration.framework */,
@@ -182,7 +214,6 @@
 				E280F4271C631FE4004DC1F7 /* iSpeechSDK.bundle */,
 				E280F41C1C631FAE004DC1F7 /* Headers */,
 				E280F4321C6320DA004DC1F7 /* file.m */,
-				E2CAAA2B1C6456B4001C9E06 /* SSRadioButtonController */,
 				E280F4311C6320D9004DC1F7 /* swifttranslatator-Bridging-Header.h */,
 			);
 			path = swifttranslatator;
@@ -219,13 +250,38 @@
 			path = Headers;
 			sourceTree = "<group>";
 		};
-		E2CAAA2B1C6456B4001C9E06 /* SSRadioButtonController */ = {
+		E2A0838E1C869240000998A9 /* Color Framework */ = {
 			isa = PBXGroup;
 			children = (
-				E2CAAA2C1C6456B4001C9E06 /* SSRadioButton.swift */,
-				E2CAAA2D1C6456B4001C9E06 /* SSRadioButtonsController.swift */,
+				E2A083671C869213000998A9 /* Chameleon_.h */,
+				E2A083681C869213000998A9 /* Chameleon_.m */,
+				E2A083691C869213000998A9 /* Chameleon.h */,
+				E2A0836A1C869213000998A9 /* ChameleonConstants.h */,
+				E2A0836B1C869213000998A9 /* ChameleonConstants.m */,
+				E2A0836C1C869213000998A9 /* ChameleonEnums.h */,
+				E2A0836D1C869213000998A9 /* ChameleonMacros.h */,
+				E2A0836E1C869213000998A9 /* NSArray+Chameleon.h */,
+				E2A0836F1C869213000998A9 /* NSArray+Chameleon.m */,
+				E2A083701C869213000998A9 /* UIAppearance+Swift.h */,
+				E2A083711C869213000998A9 /* UIAppearance+Swift.m */,
+				E2A083721C869213000998A9 /* UIButton+Chameleon.h */,
+				E2A083731C869213000998A9 /* UIButton+Chameleon.m */,
+				E2A083741C869213000998A9 /* UIColor+Chameleon.h */,
+				E2A083751C869213000998A9 /* UIColor+Chameleon.m */,
+				E2A083761C869213000998A9 /* UIColor+ChameleonPrivate.h */,
+				E2A083771C869213000998A9 /* UIColor+ChameleonPrivate.m */,
+				E2A083781C869213000998A9 /* UIImage+ChameleonPrivate.h */,
+				E2A083791C869213000998A9 /* UIImage+ChameleonPrivate.m */,
+				E2A0837A1C869213000998A9 /* UILabel+Chameleon.h */,
+				E2A0837B1C869213000998A9 /* UILabel+Chameleon.m */,
+				E2A0837C1C869213000998A9 /* UINavigationController+Chameleon.h */,
+				E2A0837D1C869213000998A9 /* UINavigationController+Chameleon.m */,
+				E2A0837E1C869213000998A9 /* UIView+ChameleonPrivate.h */,
+				E2A0837F1C869213000998A9 /* UIView+ChameleonPrivate.m */,
+				E2A083801C869213000998A9 /* UIViewController+Chameleon.h */,
+				E2A083811C869213000998A9 /* UIViewController+Chameleon.m */,
 			);
-			path = SSRadioButtonController;
+			name = "Color Framework";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +355,7 @@
 				TargetAttributes = {
 					E280F3E21C63118B004DC1F7 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 5P234F4KH9;
 					};
 					E280F3F61C63118B004DC1F7 = {
 						CreatedOnToolsVersion = 7.2;
@@ -412,13 +469,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2A083881C869213000998A9 /* UIColor+ChameleonPrivate.m in Sources */,
+				E2A083821C869213000998A9 /* Chameleon_.m in Sources */,
 				E280F3E91C63118B004DC1F7 /* ViewController.swift in Sources */,
-				E2CAAA2F1C6456B4001C9E06 /* SSRadioButtonsController.swift in Sources */,
+				E2A083891C869213000998A9 /* UIImage+ChameleonPrivate.m in Sources */,
 				E2CAAA371C646122001C9E06 /* SettingsViewController.swift in Sources */,
 				E280F4331C6320DA004DC1F7 /* file.m in Sources */,
+				E2A083861C869213000998A9 /* UIButton+Chameleon.m in Sources */,
+				E2A0838A1C869213000998A9 /* UILabel+Chameleon.m in Sources */,
 				E280F3E71C63118B004DC1F7 /* AppDelegate.swift in Sources */,
+				E2A083841C869213000998A9 /* NSArray+Chameleon.m in Sources */,
+				E2A0838D1C869213000998A9 /* UIViewController+Chameleon.m in Sources */,
 				E280F4191C631F49004DC1F7 /* VoiceViewController.swift in Sources */,
-				E2CAAA2E1C6456B4001C9E06 /* SSRadioButton.swift in Sources */,
+				E2A083871C869213000998A9 /* UIColor+Chameleon.m in Sources */,
+				E2A0838B1C869213000998A9 /* UINavigationController+Chameleon.m in Sources */,
+				E2A083831C869213000998A9 /* ChameleonConstants.m in Sources */,
+				E2A083851C869213000998A9 /* UIAppearance+Swift.m in Sources */,
+				E2A0838C1C869213000998A9 /* UIView+ChameleonPrivate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -560,6 +627,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
@@ -578,6 +647,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.derek.swifttranslatator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "swifttranslatator/swifttranslatator-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -589,6 +659,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
@@ -607,6 +679,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.derek.swifttranslatator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "swifttranslatator/swifttranslatator-Bridging-Header.h";
 			};
 			name = Release;
