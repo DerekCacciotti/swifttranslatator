@@ -10,6 +10,7 @@ import UIKit
 import Polyglot
 
 
+
 class ViewController: UIViewController, UITextFieldDelegate {
     
     
@@ -73,6 +74,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         var outputlng = defaults.objectForKey("output") as! String
         
+        
         if outputlng.characters.count == 0
         {
             translator.toLanguage = Language.English
@@ -100,7 +102,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     {
         translator.translate(str) { (translation) -> (Void) in
             self.resultLabel.text = "\(str) means \(translation)"
-                    }
+        }
     }
     
     

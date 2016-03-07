@@ -32,7 +32,6 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     var outputlang:Language!
     
     var supportedlangs:[String] = ["Arabic",
-    "Bulgarian",
     "Catalan",
     "Chinese (Simplified)",
     "Chinese (Traditional)",
@@ -59,7 +58,6 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     "Malay",
     "Maltese",
     "Norwegian",
-    "Persian",
     "Polish",
     "Portuguese",
     "Romanian",
@@ -69,18 +67,14 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     "Spanish",
     "Swedish",
     "Thai",
-    "Turkish",
-    "Ukrainian",
-    "Urdu",
-    "Vietnamese",
-    "Welsh",]
+    "Turkish"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        
+        print(supportedlangs.count)
         
         
         
@@ -132,6 +126,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     }
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return supportedlangs.count
+        print(supportedlangs.count)
         
     }
     
@@ -156,17 +151,17 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             case "French":
             outputlang = Language.French
         case "Arabic":
-            outputlang = Language.Arabic // issue
+            outputlang = Language.Arabic
             case "Polish":
             outputlang = Language.Polish
         case "Bulgarian":
-            outputlang = Language.Bulgarian // issue
+            outputlang = Language.Bulgarian
             case "Catalan":
             outputlang = Language.Catalan
             case  "Chinese (Simplified)":
-            outputlang = Language.ChineseSimplified // issue
+            outputlang = Language.ChineseSimplified 
             case  "Chinese (Traditional)":
-            outputlang = Language.ChineseTraditional // issue
+            outputlang = Language.ChineseTraditional
             case "Czech":
             outputlang = Language.Czech
         case "Danish":
@@ -180,13 +175,13 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             case "German":
             outputlang = Language.German
             case "Greek":
-            outputlang = Language.Greek // issue
+            outputlang = Language.Greek
             case "Haitian Creole":
             outputlang = Language.HaitianCreole
             case "Hebrew":
-            outputlang = Language.Hebrew // issue
+            outputlang = Language.Hebrew
             case "Hindi":
-            outputlang = Language.Hindi // isssue 
+            outputlang = Language.Hindi
             case "Hmong Daw":
             outputlang = Language.HmongDaw
             case "Hungarian":
@@ -196,13 +191,43 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             case "Italian":
             outputlang = Language.Italian
         case "Japanese":
-            outputlang = Language.Japanese // issue
+            outputlang = Language.Japanese 
             case "Korean":
-            outputlang = Language.Korean // issue
+            outputlang = Language.Korean
             case "Latvian":
             outputlang = Language.Latvian
         case "Lithuanian":
             outputlang = Language.Lithuanian
+        case "Malay":
+            outputlang = Language.Malay
+        case "Maltese":
+            outputlang = Language.Maltese
+            case "Norwegian":
+            outputlang = Language.Norwegian
+        case "Persian":
+            outputlang = Language.Persian
+        case "Portuguese":
+            outputlang = Language.Portuguese
+        case "Romanian":
+            outputlang = Language.Romanian
+            case "Russian":
+            outputlang = Language.Russian
+            case "Slovak":
+            outputlang = Language.Slovak
+            case "Slovenian":
+            outputlang = Language.Slovenian
+            case "Swedish":
+            outputlang = Language.Swedish
+            case "Thai":
+            outputlang = Language.Thai
+            case "Turkish":
+            outputlang = Language.Turkish
+            case "Ukrainian":
+            outputlang = Language.Ukrainian
+            case "Urdu":
+            outputlang = Language.Urdu
+            
+            
             
             
             

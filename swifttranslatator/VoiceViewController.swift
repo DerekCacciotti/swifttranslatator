@@ -8,7 +8,7 @@
 
 import UIKit
 import Polyglot
-
+import AVFoundation
 
 class VoiceViewController: UIViewController, ISSpeechRecognitionDelegate, ISSpeechSynthesisDelegate  {
     let translator = Polyglot(clientId: "translatorswift", clientSecret: "KqbAaNwUAL+B6CxpqKKtRhy2dYLvckUhXCzlc748D7M=")
@@ -37,6 +37,7 @@ class VoiceViewController: UIViewController, ISSpeechRecognitionDelegate, ISSpee
         recoginzer.delegate = self
         
         
+        
     
     
 
@@ -54,6 +55,7 @@ class VoiceViewController: UIViewController, ISSpeechRecognitionDelegate, ISSpee
             
             self.translator.toLanguage  = Language(rawValue: self.outp)!
             
+            
             self.translator.translate(result.text, callback: { (translation) -> (Void) in
                 print(translation)
                 
@@ -61,8 +63,109 @@ class VoiceViewController: UIViewController, ISSpeechRecognitionDelegate, ISSpee
                 
                 var synth:ISSpeechSynthesis = ISSpeechSynthesis(text: translation)
                 try! synth.speak()
+
                 self.restartButton.hidden = false
                 self.resultlabel.hidden = false
+                
+                if self.translator.toLanguage.rawValue == "ar"
+                {
+                    let utterance = AVSpeechUtterance(string: self.resultlabel.text!)
+                    utterance.voice = AVSpeechSynthesisVoice(language: "ar-SA")
+                    
+                    let synthesizer = AVSpeechSynthesizer()
+                    synthesizer.speakUtterance(utterance)
+                }
+                
+                else if self.translator.toLanguage.rawValue == "zh-CHS"
+                {
+                    
+                    let utterance = AVSpeechUtterance(string: self.resultlabel.text!)
+                    utterance.voice = AVSpeechSynthesisVoice(language: "zh-CN")
+                    
+                    let synthesizer = AVSpeechSynthesizer()
+                    synthesizer.speakUtterance(utterance)
+                }
+                
+                else if self.translator.toLanguage.rawValue == "zh-CHT"
+                {
+                    
+                    let utterance = AVSpeechUtterance(string: self.resultlabel.text!)
+                    utterance.voice = AVSpeechSynthesisVoice(language: "zh-TW")
+                    
+                    let synthesizer = AVSpeechSynthesizer()
+                    synthesizer.speakUtterance(utterance)
+                }
+                    
+                else if self.translator.toLanguage.rawValue == "el"
+                {
+                    let utterance = AVSpeechUtterance(string: self.resultlabel.text!)
+                    utterance.voice = AVSpeechSynthesisVoice(language: "el-GR")
+                    
+                    let synthesizer = AVSpeechSynthesizer()
+                    synthesizer.speakUtterance(utterance)
+                }
+                    
+                    
+                else if self.translator.toLanguage.rawValue == "he"
+                {
+                    let utterance = AVSpeechUtterance(string: self.resultlabel.text!)
+                    utterance.voice = AVSpeechSynthesisVoice(language: "he-IL")
+                    
+                    let synthesizer = AVSpeechSynthesizer()
+                    synthesizer.speakUtterance(utterance)
+                }
+                
+                else if self.translator.toLanguage.rawValue == "ja"
+                {
+                    let utterance = AVSpeechUtterance(string: self.resultlabel.text!)
+                    utterance.voice = AVSpeechSynthesisVoice(language: "ja-JP")
+                    
+                    let synthesizer = AVSpeechSynthesizer()
+                    synthesizer.speakUtterance(utterance)
+                }
+                    
+                else if self.translator.toLanguage.rawValue == "ko"
+                {
+                    let utterance = AVSpeechUtterance(string: self.resultlabel.text!)
+                    utterance.voice = AVSpeechSynthesisVoice(language: "ko-KR")
+                    
+                    let synthesizer = AVSpeechSynthesizer()
+                    synthesizer.speakUtterance(utterance)
+                }
+                
+                else if self.translator.toLanguage.rawValue == "ru"
+                {
+                    let utterance = AVSpeechUtterance(string: self.resultlabel.text!)
+                    utterance.voice = AVSpeechSynthesisVoice(language: "ru-RU")
+                    
+                    let synthesizer = AVSpeechSynthesizer()
+                    synthesizer.speakUtterance(utterance)
+                }
+                
+                    
+                else if self.translator.toLanguage.rawValue == "th"
+                {
+                    let utterance = AVSpeechUtterance(string: self.resultlabel.text!)
+                    utterance.voice = AVSpeechSynthesisVoice(language: "th-TH")
+                    
+                    let synthesizer = AVSpeechSynthesizer()
+                    synthesizer.speakUtterance(utterance)
+                }
+                    
+
+
+
+                
+
+                
+                    
+                
+                                   
+                else
+                {
+                    print("doesnt match param")
+                }
+
 
                 
             })
@@ -96,7 +199,7 @@ class VoiceViewController: UIViewController, ISSpeechRecognitionDelegate, ISSpee
     
     }
     
-    // this is called whhen the restart button is pressed
+    // this is called when the restart button is pressed
     @IBAction func restartpressed(sender: AnyObject) {
         var recoginzer:ISSpeechRecognition = ISSpeechRecognition()
         recoginzer.delegate = self
@@ -115,6 +218,10 @@ class VoiceViewController: UIViewController, ISSpeechRecognitionDelegate, ISSpee
             
             self.translator.translate(result.text, callback: { (translation) -> (Void) in
                 print(translation)
+                if translation.isEmpty
+                {
+                    print("nil")
+                }
                 
                 self.resultlabel.text = translation
                 
@@ -122,6 +229,7 @@ class VoiceViewController: UIViewController, ISSpeechRecognitionDelegate, ISSpee
                 try! synth.speak()
                 self.restartButton.hidden = false
                 self.resultlabel.hidden = false
+                //self.speakNonAlphaLanugues(self.resultlabel.text!, lang: self.translator.toLanguage)
                 
                 
             })
@@ -130,6 +238,8 @@ class VoiceViewController: UIViewController, ISSpeechRecognitionDelegate, ISSpee
         
 
     }
+    
+    
     
     
     
