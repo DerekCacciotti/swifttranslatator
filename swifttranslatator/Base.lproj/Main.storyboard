@@ -33,13 +33,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aoo-X0-iN8">
-                                <rect key="frame" x="153" y="334" width="64" height="30"/>
-                                <state key="normal" title="Translate"/>
-                                <connections>
-                                    <action selector="Translatetapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MO4-AP-7ja"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ydo-6a-713">
                                 <rect key="frame" x="159" y="395" width="57" height="32"/>
                                 <constraints>
@@ -49,6 +42,25 @@
                                 <state key="normal" title="Clear"/>
                                 <connections>
                                     <action selector="clearTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MCc-tN-ee5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aoo-X0-iN8">
+                                <rect key="frame" x="152" y="334" width="64" height="30"/>
+                                <state key="normal" title="Translate"/>
+                                <connections>
+                                    <action selector="Translatetapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MO4-AP-7ja"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jwx-Ez-9Ni">
+                                <rect key="frame" x="126" y="451" width="134" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="134" id="Dxa-fr-rkW"/>
+                                    <constraint firstAttribute="height" constant="32" id="qWI-R4-o2A"/>
+                                </constraints>
+                                <state key="normal" title="Need Pick Up Lines"/>
+                                <connections>
+                                    <action selector="clearTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vPb-hI-gHU"/>
+                                    <segue destination="BaC-tX-8fO" kind="show" id="is0-SC-Pbd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -79,13 +91,14 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="pickuplinesButton" destination="Jwx-Ez-9Ni" id="N1k-UL-8YA"/>
                         <outlet property="resultLabel" destination="FBm-wN-h1M" id="9E4-mU-rxY"/>
                         <outlet property="translationtextField" destination="pQq-VE-Pgr" id="Qry-C2-d5t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1116.5" y="428.5"/>
+            <point key="canvasLocation" x="1252.5" y="448.5"/>
         </scene>
         <!--Voice View Controller-->
         <scene sceneID="cdb-zh-J7P">
@@ -202,6 +215,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ouj-pe-QdJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2196.5" y="347.5"/>
+        </scene>
+        <!--Pickup Lines Table View Controller-->
+        <scene sceneID="s6i-H8-E9h">
+            <objects>
+                <tableViewController id="BaC-tX-8fO" customClass="PickupLinesTableViewController" customModule="swifttranslatator" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="8VV-3W-Avt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="yB7-9x-hN7">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yB7-9x-hN7" id="Qpe-X1-Kgr">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="BaC-tX-8fO" id="KRo-8u-Isz"/>
+                            <outlet property="delegate" destination="BaC-tX-8fO" id="8dZ-5j-ER8"/>
+                        </connections>
+                    </tableView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3dC-09-Nbv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2671.5" y="414.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="07M-4f-5A8">

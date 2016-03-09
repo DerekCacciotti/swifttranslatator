@@ -10,7 +10,6 @@ import UIKit
 import Polyglot
 
 
-
 class ViewController: UIViewController, UITextFieldDelegate {
     
     
@@ -22,13 +21,24 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     let translator = Polyglot(clientId: "translatorswift", clientSecret: "KqbAaNwUAL+B6CxpqKKtRhy2dYLvckUhXCzlc748D7M=")
     var defaults = NSUserDefaults.standardUserDefaults()
-
+    
+    @IBOutlet weak var pickuplinesButton: UIButton!
+    
+       
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         
         resultLabel.hidden = true
+        pickuplinesButton.hidden = true
+        
+        let tapgesure = UITapGestureRecognizer(target: self, action: "handleTap")
+        self.view.addGestureRecognizer(tapgesure)
+        
+        
         
         
         
@@ -59,6 +69,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         
     }
+    
+    func handleTap()
+    {
+        self.pickuplinesButton.hidden = false
+        
+    }
+    
+    
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
@@ -127,6 +145,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
     {
         return NSUserDefaults.standardUserDefaults().objectForKey("output") as! String
     }
-
+    
+    
+    
+  
+    
+    
+    
 }
 

@@ -38,6 +38,7 @@
 		E2A0838C1C869213000998A9 /* UIView+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A0837F1C869213000998A9 /* UIView+ChameleonPrivate.m */; };
 		E2A0838D1C869213000998A9 /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A083811C869213000998A9 /* UIViewController+Chameleon.m */; };
 		E2CAAA371C646122001C9E06 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CAAA361C646122001C9E06 /* SettingsViewController.swift */; };
+		E2F19C831C8FE87300930CC7 /* PickupLinesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F19C821C8FE87300930CC7 /* PickupLinesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +120,8 @@
 		E2A083801C869213000998A9 /* UIViewController+Chameleon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Chameleon.h"; sourceTree = "<group>"; };
 		E2A083811C869213000998A9 /* UIViewController+Chameleon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Chameleon.m"; sourceTree = "<group>"; };
 		E2CAAA361C646122001C9E06 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		E2F19C771C8E8B3B00930CC7 /* EZSwipeController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EZSwipeController.framework; path = "Pods/../build/Debug-iphoneos/EZSwipeController.framework"; sourceTree = "<group>"; };
+		E2F19C821C8FE87300930CC7 /* PickupLinesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickupLinesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +168,7 @@
 		DF62D82E574B0CBAF078456B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E2F19C771C8E8B3B00930CC7 /* EZSwipeController.framework */,
 				E2A0838E1C869240000998A9 /* Color Framework */,
 				E280F42F1C632056004DC1F7 /* CFNetwork.framework */,
 				E280F42D1C632046004DC1F7 /* Security.framework */,
@@ -206,6 +210,7 @@
 				E280F3E81C63118B004DC1F7 /* ViewController.swift */,
 				E280F4181C631F49004DC1F7 /* VoiceViewController.swift */,
 				E280F3EA1C63118B004DC1F7 /* Main.storyboard */,
+				E2F19C821C8FE87300930CC7 /* PickupLinesTableViewController.swift */,
 				E2CAAA361C646122001C9E06 /* SettingsViewController.swift */,
 				E280F3ED1C63118B004DC1F7 /* Assets.xcassets */,
 				E280F3EF1C63118B004DC1F7 /* LaunchScreen.storyboard */,
@@ -478,6 +483,7 @@
 				E2A083861C869213000998A9 /* UIButton+Chameleon.m in Sources */,
 				E2A0838A1C869213000998A9 /* UILabel+Chameleon.m in Sources */,
 				E280F3E71C63118B004DC1F7 /* AppDelegate.swift in Sources */,
+				E2F19C831C8FE87300930CC7 /* PickupLinesTableViewController.swift in Sources */,
 				E2A083841C869213000998A9 /* NSArray+Chameleon.m in Sources */,
 				E2A0838D1C869213000998A9 /* UIViewController+Chameleon.m in Sources */,
 				E280F4191C631F49004DC1F7 /* VoiceViewController.swift in Sources */,

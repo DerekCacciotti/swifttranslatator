@@ -88,8 +88,8 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     
     override func viewDidAppear(animated: Bool) {
         
-        self.navigationController?.navigationBar.barTintColor = UIColor.flatSkyBlueColorDark()
-        self.navigationController?.navigationBar.tintColor = UIColor.flatWhiteColor()
+        //self.navigationController?.navigationBar.barTintColor = UIColor.flatSkyBlueColorDark()
+       //self.navigationController?.navigationBar.tintColor = UIColor.flatWhiteColor()
         self.navigationController?.navigationItem.title = "Settings"
         
     }
@@ -126,7 +126,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     }
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return supportedlangs.count
-        print(supportedlangs.count)
+       
         
     }
     
