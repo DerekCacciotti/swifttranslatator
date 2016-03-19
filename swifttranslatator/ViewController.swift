@@ -90,10 +90,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         print("called")
         
         
-        var outputlng = defaults.objectForKey("output") as! String
+        var outputlng = defaults.objectForKey("output") as? String
         
         
-        if outputlng.characters.count == 0
+       if defaults.objectForKey("output") == nil
         {
             translator.toLanguage = Language.English
         }
@@ -102,7 +102,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             print("called")
             defaults.synchronize()
             print(outputlng)
-            translator.toLanguage = Language(rawValue: outputlng)!
+            translator.toLanguage = Language(rawValue: outputlng!)!
             
         }
 

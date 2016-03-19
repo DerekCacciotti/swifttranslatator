@@ -13,8 +13,6 @@
 		E280F3EC1C63118B004DC1F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E280F3EA1C63118B004DC1F7 /* Main.storyboard */; };
 		E280F3EE1C63118B004DC1F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E280F3ED1C63118B004DC1F7 /* Assets.xcassets */; };
 		E280F3F11C63118B004DC1F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E280F3EF1C63118B004DC1F7 /* LaunchScreen.storyboard */; };
-		E280F3FC1C63118B004DC1F7 /* swifttranslatatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E280F3FB1C63118B004DC1F7 /* swifttranslatatorTests.swift */; };
-		E280F4071C63118B004DC1F7 /* swifttranslatatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E280F4061C63118B004DC1F7 /* swifttranslatatorUITests.swift */; };
 		E280F4151C63119B004DC1F7 /* PodFile in Resources */ = {isa = PBXBuildFile; fileRef = E280F4141C63119B004DC1F7 /* PodFile */; };
 		E280F4171C6312AF004DC1F7 /* Polyglot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E280F4161C6312AF004DC1F7 /* Polyglot.framework */; };
 		E280F4191C631F49004DC1F7 /* VoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E280F4181C631F49004DC1F7 /* VoiceViewController.swift */; };
@@ -41,23 +39,6 @@
 		E2F19C831C8FE87300930CC7 /* PickupLinesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F19C821C8FE87300930CC7 /* PickupLinesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		E280F3F81C63118B004DC1F7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E280F3DB1C63118B004DC1F7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E280F3E21C63118B004DC1F7;
-			remoteInfo = swifttranslatator;
-		};
-		E280F4031C63118B004DC1F7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E280F3DB1C63118B004DC1F7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E280F3E21C63118B004DC1F7;
-			remoteInfo = swifttranslatator;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		059A4A4E4EE2D41AD8D7CB07 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20AD2941EA25F8726038A17C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -69,10 +50,8 @@
 		E280F3ED1C63118B004DC1F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E280F3F01C63118B004DC1F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E280F3F21C63118B004DC1F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E280F3F71C63118B004DC1F7 /* swifttranslatatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swifttranslatatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E280F3FB1C63118B004DC1F7 /* swifttranslatatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swifttranslatatorTests.swift; sourceTree = "<group>"; };
 		E280F3FD1C63118B004DC1F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E280F4021C63118B004DC1F7 /* swifttranslatatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swifttranslatatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E280F4061C63118B004DC1F7 /* swifttranslatatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swifttranslatatorUITests.swift; sourceTree = "<group>"; };
 		E280F4081C63118B004DC1F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E280F4141C63119B004DC1F7 /* PodFile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PodFile; sourceTree = "<group>"; };
@@ -139,20 +118,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E280F3F41C63118B004DC1F7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E280F3FF1C63118B004DC1F7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -197,8 +162,6 @@
 			isa = PBXGroup;
 			children = (
 				E280F3E31C63118B004DC1F7 /* swifttranslatator.app */,
-				E280F3F71C63118B004DC1F7 /* swifttranslatatorTests.xctest */,
-				E280F4021C63118B004DC1F7 /* swifttranslatatorUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -312,42 +275,6 @@
 			productReference = E280F3E31C63118B004DC1F7 /* swifttranslatator.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E280F3F61C63118B004DC1F7 /* swifttranslatatorTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E280F40E1C63118B004DC1F7 /* Build configuration list for PBXNativeTarget "swifttranslatatorTests" */;
-			buildPhases = (
-				E280F3F31C63118B004DC1F7 /* Sources */,
-				E280F3F41C63118B004DC1F7 /* Frameworks */,
-				E280F3F51C63118B004DC1F7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E280F3F91C63118B004DC1F7 /* PBXTargetDependency */,
-			);
-			name = swifttranslatatorTests;
-			productName = swifttranslatatorTests;
-			productReference = E280F3F71C63118B004DC1F7 /* swifttranslatatorTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		E280F4011C63118B004DC1F7 /* swifttranslatatorUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E280F4111C63118B004DC1F7 /* Build configuration list for PBXNativeTarget "swifttranslatatorUITests" */;
-			buildPhases = (
-				E280F3FE1C63118B004DC1F7 /* Sources */,
-				E280F3FF1C63118B004DC1F7 /* Frameworks */,
-				E280F4001C63118B004DC1F7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E280F4041C63118B004DC1F7 /* PBXTargetDependency */,
-			);
-			name = swifttranslatatorUITests;
-			productName = swifttranslatatorUITests;
-			productReference = E280F4021C63118B004DC1F7 /* swifttranslatatorUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -361,14 +288,6 @@
 					E280F3E21C63118B004DC1F7 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 5P234F4KH9;
-					};
-					E280F3F61C63118B004DC1F7 = {
-						CreatedOnToolsVersion = 7.2;
-						TestTargetID = E280F3E21C63118B004DC1F7;
-					};
-					E280F4011C63118B004DC1F7 = {
-						CreatedOnToolsVersion = 7.2;
-						TestTargetID = E280F3E21C63118B004DC1F7;
 					};
 				};
 			};
@@ -386,8 +305,6 @@
 			projectRoot = "";
 			targets = (
 				E280F3E21C63118B004DC1F7 /* swifttranslatator */,
-				E280F3F61C63118B004DC1F7 /* swifttranslatatorTests */,
-				E280F4011C63118B004DC1F7 /* swifttranslatatorUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -402,20 +319,6 @@
 				E280F4281C631FE4004DC1F7 /* iSpeechSDK.bundle in Resources */,
 				E280F4151C63119B004DC1F7 /* PodFile in Resources */,
 				E280F3EC1C63118B004DC1F7 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E280F3F51C63118B004DC1F7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E280F4001C63118B004DC1F7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,36 +398,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E280F3F31C63118B004DC1F7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E280F3FC1C63118B004DC1F7 /* swifttranslatatorTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E280F3FE1C63118B004DC1F7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E280F4071C63118B004DC1F7 /* swifttranslatatorUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		E280F3F91C63118B004DC1F7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E280F3E21C63118B004DC1F7 /* swifttranslatator */;
-			targetProxy = E280F3F81C63118B004DC1F7 /* PBXContainerItemProxy */;
-		};
-		E280F4041C63118B004DC1F7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E280F3E21C63118B004DC1F7 /* swifttranslatator */;
-			targetProxy = E280F4031C63118B004DC1F7 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E280F3EA1C63118B004DC1F7 /* Main.storyboard */ = {
@@ -635,6 +509,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
@@ -644,6 +519,12 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/swifttranslatator",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-iquote",
+					"\"$CONFIGURATION_BUILD_DIR/Polyglot.framework/Headers\"",
+					"-fembed-bitcode",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -656,6 +537,7 @@
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "swifttranslatator/swifttranslatator-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				WARNING_CFLAGS = "-Wno-error=unused-command-line-argument";
 			};
 			name = Debug;
 		};
@@ -667,6 +549,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
@@ -676,6 +559,12 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/swifttranslatator",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-iquote",
+					"\"$CONFIGURATION_BUILD_DIR/Polyglot.framework/Headers\"",
+					"-fembed-bitcode",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -687,54 +576,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "swifttranslatator/swifttranslatator-Bridging-Header.h";
-			};
-			name = Release;
-		};
-		E280F40F1C63118B004DC1F7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = swifttranslatatorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.derek.swifttranslatatorTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swifttranslatator.app/swifttranslatator";
-			};
-			name = Debug;
-		};
-		E280F4101C63118B004DC1F7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = swifttranslatatorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.derek.swifttranslatatorTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swifttranslatator.app/swifttranslatator";
-			};
-			name = Release;
-		};
-		E280F4121C63118B004DC1F7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = swifttranslatatorUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.derek.swifttranslatatorUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = swifttranslatator;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		E280F4131C63118B004DC1F7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = swifttranslatatorUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.derek.swifttranslatatorUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = swifttranslatator;
-				USES_XCTRUNNER = YES;
+				WARNING_CFLAGS = "-Wno-error=unused-command-line-argument";
 			};
 			name = Release;
 		};
@@ -755,24 +597,6 @@
 			buildConfigurations = (
 				E280F40C1C63118B004DC1F7 /* Debug */,
 				E280F40D1C63118B004DC1F7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E280F40E1C63118B004DC1F7 /* Build configuration list for PBXNativeTarget "swifttranslatatorTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E280F40F1C63118B004DC1F7 /* Debug */,
-				E280F4101C63118B004DC1F7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E280F4111C63118B004DC1F7 /* Build configuration list for PBXNativeTarget "swifttranslatatorUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E280F4121C63118B004DC1F7 /* Debug */,
-				E280F4131C63118B004DC1F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
